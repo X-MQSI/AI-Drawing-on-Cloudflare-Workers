@@ -125,7 +125,7 @@ async function handleRequest(event) {
       }
     });
   } else if (request.method === 'POST' && request.url.endsWith('/api')) {
-    const apiKey = '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';
+    const apiKey = '请将此处替换为你的API';
     const url = 'https://api-inference.huggingface.co/models/alvdansen/littletinies';
 
     const data = await request.json();
