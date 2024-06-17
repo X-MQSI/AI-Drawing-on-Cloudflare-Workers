@@ -1,13 +1,14 @@
 # AI-Drawing-on-Cloudflare-Workers  
 
 这是一个基于 Cloudflare Workers 的脚本，通过 Cloudflare Workers 服务简单实现了一个AI图像生成器，并提供了简单的Web界面，用户可以输入描述，脚本将其发送到Hugging Face模型，生成对应图像并展示给用户。  
+
 ![image](https://github.com/X-MQSI/AI-Drawing-on-Cloudflare-Workers/assets/118874898/0bc352f5-9381-4583-aad4-b8eeb5e77a01)  
 
 ## 绘图模型  
 
 - 默认模型：[littletinies](https://huggingface.co/alvdansen/littletinies)  
-该模型由[Minta K](https://huggingface.co/alvdansen/activity/likes)提供，运行于[Hugging Face](https://huggingface.co/)的Inference API之上。  
 
+该模型由[Minta K](https://huggingface.co/alvdansen/activity/likes)提供，运行于[Hugging Face](https://huggingface.co/)的Inference API之上。  
 您也可以在Hugging Face选择其他绘图模型并对代码进行修改。  
 
 ## 部署方法  
