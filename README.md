@@ -13,10 +13,10 @@
 
 ## 部署方法  
 
-1. 注册 Cloudflare 账户：如果您尚未拥有 Cloudflare 账户，请在 [Cloudflare 官方网站](https://www.cloudflare.com/) 上注册一个账户。  
+1. 注册 [Cloudflare](https://www.cloudflare.com/) 账户。 
 2. 创建 Workers 脚本：登录到 Cloudflare 账户后，进入 "Workers" 部分，创建一个新的 Workers 脚本。  
-3. 复制[worker.js](worker.js)：将本脚本粘贴到 Workers 编辑器中。  
-4. 注册Hugging Face账户并配置账户API密钥：如果您尚未拥有 Cloudflare 账户，请在 [Hugging Face](https://huggingface.co/) 上注册一个账户。    
+3. 复制 [worker.js](worker.js) ：将本脚本粘贴到 Workers 编辑器中。  
+4. 注册 [Hugging Face](https://huggingface.co/) 账户并配置账户API密钥。   
 5. 将您所得的Hugging Face API密钥粘贴到脚本相应的位置。  
 
 ## 鸣谢  
