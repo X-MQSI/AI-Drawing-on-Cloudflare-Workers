@@ -38,5 +38,5 @@
 本项目根据GPL-3.0许可证授权-有关详细信息，请参阅[LICENSE.md](LICENSE.md)文件。  
 保留署名权。  
 
-MQSI
+MQSI  
 2024/06/17
