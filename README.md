@@ -17,13 +17,7 @@
 2. 创建 Workers 脚本：登录到 Cloudflare 账户后，进入 "Workers" 部分，创建一个新的 Workers 脚本。  
 3. 复制 [worker.js](worker.js) ：将本脚本粘贴到 Workers 编辑器中。  
 4. 注册 [Hugging Face](https://huggingface.co/) 账户并配置账户API密钥。   
-5. 将您所得的Hugging Face API密钥粘贴到脚本相应的位置。  
-
-## 鸣谢  
-
-- [Cloudflare-Workers-Proxy](https://github.com/ymyuuu/Cloudflare-Workers-Proxy/) 为本项目的Web界面设计提供了参考。  
-- [Cloudflare Workers](https://cloudflare.com/) 提供了服务逻辑。  
-- [Hugging Face](https://huggingface.co/) 驱动了绘图模型。  
+5. 将您所得的Hugging Face API密钥粘贴到脚本相应的位置。   
 
 ## 注意事项及免责声明  
 
@@ -37,6 +31,13 @@
 
 本项目根据GPL-3.0许可证授权-有关详细信息，请参阅[LICENSE.md](LICENSE.md)文件。  
 保留署名权。  
+
+## 鸣谢  
+
+- [Cloudflare-Workers-Proxy](https://github.com/ymyuuu/Cloudflare-Workers-Proxy/) 为本项目的Web界面设计提供了参考。  
+- [Cloudflare Workers](https://cloudflare.com/) 提供了服务逻辑。  
+- [Hugging Face](https://huggingface.co/) 驱动了绘图模型。
+
 
 MQSI  
 2024/06/17
