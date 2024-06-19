@@ -1,42 +1,48 @@
-# AI Drawing on Cloudflare Workers  
+# AI Drawing on Cloudflare Workers
 
-这是一个基于 Cloudflare Workers 的脚本，通过 Cloudflare Workers 服务简单实现了一个AI图像生成器，并提供了简单的Web界面，用户可以输入描述，脚本将其发送到Hugging Face模型，生成对应图像并展示给用户。  
+This script is based on Cloudflare Workers and implements a simple AI image generator via the Cloudflare Workers service. It provides a simple web interface where users can input descriptions, which the script then sends to a Hugging Face model to generate and display the corresponding image.
+[中文文档在这里](https://github.com/X-MQSI/AI-Drawing-on-Cloudflare-Workers/blob/main/README_Zh.md)
 
-![image](https://github.com/X-MQSI/AI-Drawing-on-Cloudflare-Workers/assets/118874898/0bc352f5-9381-4583-aad4-b8eeb5e77a01)  
+![image](https://github.com/X-MQSI/AI-Drawing-on-Cloudflare-Workers/assets/118874898/4974f241-1673-41c5-83b0-08b6fb9c7a21)
 
-## 绘图模型  
 
-- 默认模型：[littletinies](https://huggingface.co/alvdansen/littletinies)  
+## Drawing Model
 
-该模型由[Minta K](https://huggingface.co/alvdansen/activity/likes)提供，运行于[Hugging Face](https://huggingface.co/)的Inference API之上。  
-您也可以在Hugging Face选择其他绘图模型并对代码进行修改。  
+![image](https://github.com/X-MQSI/AI-Drawing-on-Cloudflare-Workers/assets/118874898/de5444d2-60ce-4e09-902b-2079fef74fe1)
+Three models are preset:  
+- [wd-1-5-beta3](https://huggingface.co/waifu-diffusion/wd-1-5-beta3)
+- [littletinies](https://huggingface.co/alvdansen/littletinies)
+- [stable-diffusion-xl-base-1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0?text=Cirno+wandering+through+the+forest)
 
-## 部署方法  
+This model is all runs on the Hugging Face Inference Server.  
+You can also add other drawing models from Hugging Face and modify the code accordingly.
 
-1. 注册 [Cloudflare](https://www.cloudflare.com/) 账户。 
-2. 创建 Workers 脚本：登录到 Cloudflare 账户后，进入 "Workers" 部分，创建一个新的 Workers 脚本。  
-3. 复制 [worker.js](worker.js) ：将本脚本粘贴到 Workers 编辑器中。  
-4. 注册 [Hugging Face](https://huggingface.co/) 账户并配置账户API密钥。   
-5. 将您所得的Hugging Face API密钥粘贴到脚本相应的位置。   
+## Deployment Instructions
 
-## 注意事项及免责声明  
+1. Register for a [Cloudflare](https://www.cloudflare.com/) account. 
+2. Create a Workers script: After logging into your Cloudflare account, go to the "Workers" section and create a new Workers script.  
+3. Copy [worker.js](worker.js): Paste this script into the Workers editor.  
+4. Register for a [Hugging Face](https://huggingface.co/) account and configure your account API key.   
+5. Paste your Hugging Face API key into the appropriate place in the script.   
 
-1. 请确保部署的 Workers 脚本在部署时是有效的，并且有足够的资源来处理请求。  
-2. 请注意不要滥用该服务，确保只将它用于合法和合适的用途。  
-3. **责任限制**：使用此脚本需自行承担风险，作者不对脚本可能导致的任何事项负责。  
-4. **合法使用**：请确保遵守所有适用的法律、法规和政策。   
-5. **AI创作**：本说明文档及部分代码由AI创作，请相关使用者注意。  
+## Notes and Disclaimer
 
-## 许可证
+1. Ensure that the deployed Workers script is valid at the time of deployment and has sufficient resources to handle requests.  
+2. Be careful not to abuse the service and ensure it is used only for legitimate and appropriate purposes.  
+3. **Liability Limitation**: Use of this script is at your own risk, and the author is not responsible for any issues that may arise from its use.  
+4. **Legal Use**: Ensure compliance with all applicable laws, regulations, and policies.   
+5. **AI Creation**: This documentation and parts of the code were created by AI; please be aware of this when using it.  
 
-本项目根据GPL-3.0许可证授权-有关详细信息，请参阅[LICENSE.md](LICENSE.md)文件。  
-保留署名权。  
+## License
 
-## 鸣谢  
+This project is licensed under the GPL-3.0 License - for more details, see the [LICENSE.md](LICENSE.md) file.  
+Attribution rights reserved.  
 
-- [Cloudflare-Workers-Proxy](https://github.com/ymyuuu/Cloudflare-Workers-Proxy/) 为本项目的Web界面设计提供了参考。  
-- [Cloudflare Workers](https://cloudflare.com/) 提供了服务逻辑。  
-- [Hugging Face](https://huggingface.co/) 驱动了绘图模型。
+## Acknowledgments
+
+- [Cloudflare-Workers-Proxy](https://github.com/ymyuuu/Cloudflare-Workers-Proxy/) for providing a reference for the web interface design of this project.  
+- [Cloudflare Workers](https://cloudflare.com/) for providing the service logic.  
+- [Hugging Face](https://huggingface.co/) for powering the drawing model.
 
 **********
 MQSI  
