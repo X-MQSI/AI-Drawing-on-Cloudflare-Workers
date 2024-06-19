@@ -1,6 +1,6 @@
 # AI Drawing on Cloudflare Workers
 
-This script is based on Cloudflare Workers and implements a simple AI image generator via the Cloudflare Workers service. It provides a simple web interface where users can input descriptions, which the script then sends to a Hugging Face model to generate and display the corresponding image.
+This script is based on Cloudflare Workers and implements a simple AI image generator via the Cloudflare Workers service. It provides a simple web interface where users can input descriptions, which the script then sends to a Hugging Face model to generate and display the corresponding image.  
 [中文文档在这里](https://github.com/X-MQSI/AI-Drawing-on-Cloudflare-Workers/blob/main/README_Zh.md)
 
 ![image](https://github.com/X-MQSI/AI-Drawing-on-Cloudflare-Workers/assets/118874898/4974f241-1673-41c5-83b0-08b6fb9c7a21)
